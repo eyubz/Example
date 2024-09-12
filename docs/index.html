@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Project</title>
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      header nav {
+        display: flex;
+        justify-content: center;
+      }
+
+      header nav a {
+        color: white;
+        padding: 0 20px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* Intro Section */
+      #intro {
+        background: url("./image1_0\ \(1\).jpg") no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+      }
+
+      #intro h1 {
+        font-size: 4rem;
+        margin-bottom: 10px;
+      }
+
+      #intro p {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+
+      #intro button {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      #intro button:hover {
+        background-color: #218838;
+      }
+
+      /* Feature Section */
+      #features {
+        padding: 50px 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+      }
+
+      #features h2 {
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        color: #333;
+      }
+
+      .features-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .feature:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .feature img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .feature-text {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .feature-text h3 {
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+        color: #333;
+      }
+
+      .feature-text p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.5;
+      }
+
+      /* About Section */
+      #about {
+        padding: 50px 20px;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+
+      #about h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+        color: #333;
+      }
+
+      #about p {
+        margin-bottom: 20px;
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .team {
+        margin-bottom: 20px;
+      }
+
+      .team a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header>
+      <nav>
+        <a href="#intro">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#video">Video</a>
+      </nav>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="intro">
+      <h1>UNIQUE MINDS</h1>
+      <p>An e-learning platform for children with down syndrome.</p>
+      <button onclick="window.location.href='https://youtu.be/3_LCUgMaozM '">
+        View Project
+      </button>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="features">
+      <h2>Key Features</h2>
+
+      <div class="features-container">
+        <div class="feature">
+          <img src="./progress.png" alt="Progress Tracking" />
+          <div class="feature-text">
+            <h3>Progress Tracking</h3>
+            <p>
+              Track your progress effortlessly with visual indicators,
+              personalized goals, and real-time updates—stay motivated and
+              achieve your learning milestones!
+            </p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <img
+            src="./Screenshot 2024-09-12 212520.png"
+            alt="Schedule Management"
+          />
+          <div class="feature-text">
+            <h3>Schedule Management</h3>
+            <p>
+              Seamlessly manage your schedule with flexible booking and
+              real-time availability updates—ensuring you never miss a session!
+            </p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <img src="./courseupload.png" alt="Course Upload Functionality" />
+          <div class="feature-text">
+            <h3>Course Upload Functionality</h3>
+            <p>
+              Effortlessly upload and manage your courses with our intuitive
+              interface—streamline your content creation and keep everything
+              organized in one place!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About the Project</h2>
+      <p>
+        This project was inspired by a personal desire to create an inclusive
+        and accessible learning environment for children with Down syndrome.
+        Witnessing the challenges these children face in traditional learning
+        settings, I wanted to build a platform that caters specifically to their
+        needs. The journey began in early 2023, and after months of development
+        and testing, this platform has evolved into a comprehensive tool that
+        aims to enhance learning experiences for these children.
+      </p>
+      <p>
+        This project is part of my portfolio for Holberton School, showcasing my
+        skills in web development and design. You can explore the code and more
+        details in the
+        <a href="https://github.com/eyubz/Unique-Minds">Github Repository</a>.
+      </p>
+      <div class="team">
+        <a href="https://linkedin.com/in/member-linkedin">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/eybz">Github</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 Your Project Name. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script>
+      // You can add any additional JavaScript functionality here if needed
+    </script>
+  </body>
+</html>
